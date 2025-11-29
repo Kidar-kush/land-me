@@ -4,6 +4,9 @@
 body{
     padding: 20px;
     background: #404427;
+    overflow-x: hidden;
+    margin-left: 0;
+    
 }
 p{
     color: whitesmoke;
@@ -44,86 +47,259 @@ header nav{
     font-size: x-large;
     font-family: monospace;
 }
+.first-section__text span{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    color: bisque;
+    /* text-decoration: solid; */
+}
+.first-section__image img{
+    padding: 1rem;
+    
+}
+.second-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 .second-section__container{
-    background: #6e6e30;
+    background: bisque;
     padding: 10px;
     text-align: center;
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: row;
+    /* width: 100%; */
+}
+.second-section__text p span.italic {
+    font-style: italic;
+    font-weight: bold;
+    color: #404427;
+}
+.second-section__text p span.ul {
+   text-decoration: underline;
+   color: #404427;
 }
 .second-section__container2{
-    background: #6e6e30;
-    padding: 10px;
+    background: bisque;
+    padding: 9px;
     text-align: center;
     display: flex;
+    /* width: fit-content; */
     /* flex-wrap: wrap; */
     /* flex-direction: row; */
 }
 .second-section__container2 p{
+    text-align: left;
+}
+.second-section__container2 h3{
+    text-align: left;
+    color: rgb(52, 44, 35);
+    text-decoration: underline;
+
+}
+
+.second-section__button button{
+    background: coral;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    transform-style: preserve-3d;
+}
+.second-section__button{
+    padding-top: 15rem;
+    
     text-align: center;
+    
+   
+    
 }
 .second-section__text{
     font-size: x-large;
     font-family: monospace;
-    /* max-width: 30px; */
-    /* display: flex;
-    flex-direction: column; */
+    padding: 5rem;
+    color: #404427;
+    max-width: 25rem;
+    
 }
-.second-section__arrow{
-    flex-direction: row;
+.second-section__text p{
+    color: #404427;
+}
+.second-section__arrows{
+    text-align: left;
 }
 .second-section__image{
     display: flex;
     position: relative;
     padding: 50px;
+    border-radius: 10px;
+}
+.second-section__image img{
+    border-radius: 20px;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
 }
 .third-section__container{
     padding: 10px;
     text-align: center;
     display: flex;
 }
-.third-section__image{
-    padding: 20px;
+.third-section__image img{
+     height: 350px;
+    width: 350px;
+    padding-left: 250px;
+   border-radius: 800px;
 }
 .third-section__text{
-    padding: 20px;
-    font-size: larger;
+    padding-left: 70px;
+    font-size: 20px;
     font-family: monospace;
 }
-button{
+.third-section__text-ex{
+    color: aliceblue;
+    font-style: italic;
+    font-weight:bold ;
+}
+
+.third-section__button button{
+    background-color: bisque;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right:5rem ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+/* button{
     border: 1px solid black;
     background: rgba(243, 80, 80, 0.72);
     border-radius: 10px;
     padding: 10px;
     color: whitesmoke;
-}
-.fourth-section__container{
+} */
+.fourth-section__container-box{
     padding: 10px;
     display: flex;
     background: whitesmoke;
+    border-bottom: 1px solid black;
 }
 .fourth-section__text p{
     color: black;
-    padding: 1rem;
+    border-right: 1px solid black;
     font-size: 1rem;
     font-family: monospace;
+    padding-left: 1rem;
 }
 .fourth-section__A a{
     color: burlywood;
+    padding: 1rem;
 }
+.fourth-section__A {
+    padding: 2rem;
+}
+
 .fifth-section__container{
-    padding: 5rem;
-    background: whitesmoke;
+    padding: 4.5rem;
+    background: bisque;
+    background-image: url(user1.png); 
+    background-size: 20rem auto;
+    
+   
+    background-position-x: center;
+   max-height: 100%;
+    background-repeat: no-repeat;
+    max-height: fit-content;
+    align-items: center;
+    text-align: center;
+    
+}
+.fifth-section__text{
+    display: flex;
+    padding: 4rem;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.fifth-section__text span.italic{
+    text-decoration: underline;
+}
+.fifth-section__text p{
+   
+    display: flex;
+    padding: 3rem;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(31, 3, 3);
+}
+.fifth-section__text h3{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+.fifth-section__image{
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.fifth-section__image img{
+    border-radius: 10px;
+}
+.fifth-section__image button.fifth-button {
+   background: bisque;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right:5rem ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+
+}
+.fifth-section__image button.fifth-button:hover{
+    background: darkblue;
+}
+button:hover{
+    background: darkblue;
 }
 .sixth-section__container{
     padding: 5rem;
-    display: flex;
+    
+    justify-content: center;
 }
-.seventh-section__cntainer{
-    padding: 4rem;
-    background-color: #c9c935;
+.sixth-section__image img{
+    border-radius: 100%;
+    align-items: right;
+    text-align: right;
 
+    
+}
+.sixth-section__text h5{
+    font-size: 20px;
+    color: bisque;
+}
+.sixth-section__image{
+    align-items: right;
+    text-align: end;
+    
+}
+.seventh-section__container{
+    padding: 6rem;
+    background-color: #c9c935;
+    align-items: center;
+    text-align: center;
+
+}
+.seventh-section__text{
+    padding: 2rem;
+    font-size: 30px;
+}
+.seventh-section__image img{
+    padding: 1rem;
 }
 .eight-section__container{
     padding: 5rem;
@@ -136,7 +312,30 @@ button{
 footer{
     text-align: center;
     padding: 5rem;
+    border-top: 1px solid black;
 }
 .footer-nav a{
     color: bisque;
+    padding: 3rem;
+}
+.footer-image img{
+    padding: 2rem;
+}
+
+
+
+@media (max-width: 480px) {
+    html {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 2rem;
+    }
 }

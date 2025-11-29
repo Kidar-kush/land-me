@@ -1,12 +1,29 @@
 /* html {
     padding: 20px;
+    display: flex;
+    border: 1px solid black;
+    display: grid;
+   flex-wrap: wrap;
+   gap: 10px
 } */
+ /* *{
+    margin: 0;
+    padding: 0;
+ } */
 body{
-    padding: 20px;
+    /* padding: 20px; */
     background: #404427;
     overflow-x: hidden;
-    margin-left: 0;
-    
+    /* margin-right: 20px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* gap:20px */
+    align-items: center;
+    padding: 10px;
+    /* display: flex; */
+    /* background: whitesmoke; */
+    border-bottom: 1px solid black;
 }
 p{
     color: whitesmoke;
@@ -17,9 +34,10 @@ p{
 header{
     background: whitesmoke;
     display: flex;
-    padding: 20px;
+    justify-content: space-between;
+    /* padding: 20px; */
     /* text-decoration: none; */
-    position: static;
+   /* position: absolute; */
 }
 header a{
     text-decoration: none;
@@ -60,18 +78,12 @@ header nav{
 }
 .second-section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    /* flex-wrap: wrap; */
+    
 }
 .second-section__container{
     background: bisque;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    /* width: 100%; */
+   
 }
 .second-section__text p span.italic {
     font-style: italic;
@@ -84,15 +96,19 @@ header nav{
 }
 .second-section__container2{
     background: bisque;
-    padding: 9px;
+    /* padding: 9px; */
     text-align: center;
-    display: flex;
+    /* display: inline-flex; */
+   
     /* width: fit-content; */
     /* flex-wrap: wrap; */
     /* flex-direction: row; */
 }
 .second-section__container2 p{
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .second-section__container2 h3{
     text-align: left;
@@ -147,6 +163,7 @@ header nav{
     padding: 10px;
     text-align: center;
     display: flex;
+    width: 100%;
 }
 .third-section__image img{
      height: 350px;
@@ -164,6 +181,10 @@ header nav{
     font-style: italic;
     font-weight:bold ;
 }
+/* .third-section{
+    display: flex;
+    flex-direction: column;
+} */
 
 .third-section__button button{
     background-color: bisque;
@@ -174,6 +195,12 @@ header nav{
     cursor: pointer;
     font-size: large;
 }
+/* .third-section__container-box{
+    padding: 8px;
+    display: flex;
+    background: whitesmoke;
+    border-bottom: 1px solid black;
+} */
 /* button{
     border: 1px solid black;
     background: rgba(243, 80, 80, 0.72);
@@ -186,13 +213,16 @@ header nav{
     display: flex;
     background: whitesmoke;
     border-bottom: 1px solid black;
+    width: 100%;
 }
 .fourth-section__text p{
     color: black;
     border-right: 1px solid black;
     font-size: 1rem;
     font-family: monospace;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    width: 100%;
+    position: inherit;
 }
 .fourth-section__A a{
     color: burlywood;
@@ -201,7 +231,9 @@ header nav{
 .fourth-section__A {
     padding: 2rem;
 }
-
+.fourth-section{
+    display: flex;
+}
 .fifth-section__container{
     padding: 4.5rem;
     background: bisque;
@@ -217,11 +249,15 @@ header nav{
     text-align: center;
     
 }
+/* .fifth-section{
+
+} */
 .fifth-section__text{
     display: flex;
-    padding: 4rem;
+    /* flex-direction: column; */
+    padding: 2rem;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     
 }
 .fifth-section__text span.italic{
@@ -266,10 +302,22 @@ header nav{
 button:hover{
     background: darkblue;
 }
+.sixth-section{
+   display: grid;
+   flex-wrap: wrap;
+   gap: 10px; 
+   width: 100%;
+   
+}
 .sixth-section__container{
-    padding: 5rem;
-    
-    justify-content: center;
+    /* padding: 5rem; */
+    flex: 1 1 150px
+    /* overflow: hidden; */
+    /* justify-content: center; */
+}
+.sixth-section__text p{
+    display: flex;
+    flex-wrap: wrap;
 }
 .sixth-section__image img{
     border-radius: 100%;
@@ -323,19 +371,41 @@ footer{
 }
 
 
-
+/* mobile */
 @media (max-width: 480px) {
     html {
-        font-size: 1rem;
+        font-size: 5px;
+    }
+    .second-section{
+        display: grid;
+    }
+    .third-section__image img{
+        position: relative;
+        height: 120px;
+    width: 120px;
+    
+    }
+    .fourth-section__container-box{
+        padding: 1px;
+        width: 100%;
+    }
+    .fourth-section__text p{
+        max-width: 60px;
+       border-spacing: 5px;
+       font-size: small;
+    }
+    .fourth-section__A{
+        max-width: 60px;
+        font-size: small;
     }
 }
 @media (max-width: 600px) {
     html {
-        font-size: 1.5rem;
+        font-size: 0.5rem;
     }
 }
 @media (max-width: 768px) {
     html {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }

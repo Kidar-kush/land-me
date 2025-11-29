@@ -1,0 +1,142 @@
+/* html {
+    padding: 20px;
+} */
+body{
+    padding: 20px;
+    background: #404427;
+}
+p{
+    color: whitesmoke;
+}
+/* span{
+    color: whitesmoke;
+} */
+header{
+    background: whitesmoke;
+    display: flex;
+    padding: 20px;
+    /* text-decoration: none; */
+    position: static;
+}
+header a{
+    text-decoration: none;
+    padding-left: 30px;
+   
+}
+header nav{
+    align-items: right;
+    /* border: 1px solid burlywood; */
+    box-shadow: 10px;
+    padding-top: 30px;
+    padding-left: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.first-section__container{
+    padding: 10px;
+    /* align-items: center; */
+    text-align: center;
+    font-size: larger;
+    position: relative;
+}
+.first-section__text p{
+    color: whitesmoke;
+    font-size: x-large;
+    font-family: monospace;
+}
+.second-section__container{
+    background: #6e6e30;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+}
+.second-section__container2{
+    background: #6e6e30;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+}
+.second-section__container2 p{
+    text-align: center;
+}
+.second-section__text{
+    font-size: x-large;
+    font-family: monospace;
+    /* max-width: 30px; */
+    /* display: flex;
+    flex-direction: column; */
+}
+.second-section__arrow{
+    flex-direction: row;
+}
+.second-section__image{
+    display: flex;
+    position: relative;
+    padding: 50px;
+}
+.third-section__container{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+.third-section__image{
+    padding: 20px;
+}
+.third-section__text{
+    padding: 20px;
+    font-size: larger;
+    font-family: monospace;
+}
+button{
+    border: 1px solid black;
+    background: rgba(243, 80, 80, 0.72);
+    border-radius: 10px;
+    padding: 10px;
+    color: whitesmoke;
+}
+.fourth-section__container{
+    padding: 10px;
+    display: flex;
+    background: whitesmoke;
+}
+.fourth-section__text p{
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: monospace;
+}
+.fourth-section__A a{
+    color: burlywood;
+}
+.fifth-section__container{
+    padding: 5rem;
+    background: whitesmoke;
+}
+.sixth-section__container{
+    padding: 5rem;
+    display: flex;
+}
+.seventh-section__cntainer{
+    padding: 4rem;
+    background-color: #c9c935;
+
+}
+.eight-section__container{
+    padding: 5rem;
+    text-align: center;
+}
+.eight-section__text{
+    font-size: x-large;
+    font-family: sans-serif;
+}
+footer{
+    text-align: center;
+    padding: 5rem;
+}
+.footer-nav a{
+    color: bisque;
+}

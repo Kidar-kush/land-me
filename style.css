@@ -431,6 +431,15 @@ footer {
     html {
         font-size: 5px;
     }
+    header {
+        max-width: 100%;
+        display: flex;
+    }
+    header h3 {
+        text-align: left;
+        font-size: small;
+        padding: 1px;
+    }
 
     .second-section {
         display: grid;
@@ -451,7 +460,7 @@ footer {
         padding: 1px;
         width: 100%;
     }
-.seventh-section__text{
+ .seventh-section__text{
     padding: 1rem;
 }
     .fifth-section__text {
